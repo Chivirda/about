@@ -1,10 +1,11 @@
 :root {
-  --main-text-color: rgba(41, 41, 41, 1);
-  --footer-text-color: rgba(255, 255, 255, 1);
+  --main-text-color: #292929;
+  --footer-text-color: #fff;
+  --footer-bg-color: #020202;
   --font-family: Arial, Helvetica, sans-serif;
   --footer-font-size: 50px;
-  --main-color: rgba(255, 255, 255, 1);
-  --link-color: rgba(0, 191, 255, 1);
+  --main-color: #fff;
+  --link-color: #00bfff;
 }
 
 * {
@@ -124,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(2, 2, 2, 1);
+  background-color: var(--footer-bg-color);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--footer-text-color);
   font-size: 20px;

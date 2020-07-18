@@ -59,8 +59,8 @@ html(lang="ru")
 
         ul.nav__list
           each film in filmList
-            a(href= film.url target="_blank" class="nav__item")
-              li= film.name + ', ' + film.year + ' г.'
+            li
+              a(href= film.url target="_blank" class="nav__item")= film.name + ', ' + film.year + ' г.'
     footer.footer
       .container
         |&copy; 2020 Sergey Chivirda
