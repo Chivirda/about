@@ -1,6 +1,16 @@
 const lightButton = document.querySelector('.toggle-button')
-const mainColor = getComputedStyle(document.body).backgroundColor
+let mainColor = getComputedStyle(document.body).getPropertyValue('--main-color')
+let textColor = getComputedStyle(document.body).getPropertyValue('--main-text-color')
+let light = true
 
 lightButton.addEventListener('click', () => {
-  console.log(mainColor)
+  if (light === true) {
+    document.documentElement.style.setProperty('--main-color', '#000')
+    document.documentElement.style.setProperty('--main-text-color', '#fff')
+    light = false
+  } else if (light === false) {
+    document.documentElement.style.setProperty('--main-color', '#fff')
+    document.documentElement.style.setProperty('--main-text-color', '#292929')
+    light = true
+  }
 })
