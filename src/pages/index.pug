@@ -5,7 +5,7 @@ html(lang="ru")
     link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
     link(rel="stylesheet", href="styles/style.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous")
-    script
+    script(type="application/ld+json")
       include ../schema/schema.json
   body
     header.header.container
@@ -22,9 +22,43 @@ html(lang="ru")
         p.main__text Своё знакомство с вебом начал с курса школы 
           a(href="https://highlights.guru/" class="main__link" target="_blank") Highlights
           |. К сожалению, диплом о прохождении курса по web-дизайну я не получил. Так как не сдал выпускную работу. 
-        p.main__text В дальнейшем я работал в 2 студиях по нескольку месяцев. В итоге ушёл с мыслью то том, что это "не моё". В настоящее время работаю инженером отдела продаж. Много узнал об "электрике". Ещё больше о продажах юрлицам. 
+        p.main__text В дальнейшем я работал в 2 студиях по нескольку месяцев. В итоге ушёл с мыслью о том, что это "не моё". В настоящее время работаю инженером отдела продаж. Много узнал об "электрике". Ещё больше о продажах юрлицам. 
         p.main__text Сейчас всё свободное время трачу на изучение Frontend разработки. В моём репозитории на Github есть проекты на чистом JS, Vue и на React.
       nav
+        h3.nav__heading Мои любимые фильмы
+        - 
+          var filmList = [
+            {
+              name: 'Джентльмены',
+              year: 2019,
+              url: 'https://www.kinopoisk.ru/film/1143242/'
+            },
+            {
+              name: 'Хулиганы',
+              year: 2005,
+              url: 'https://www.kinopoisk.ru/film/77444/'
+            },
+            {
+              name: 'Побег из Шоушенка',
+              year: 1994,
+              url: 'https://www.kinopoisk.ru/film/326/'
+            },
+            {
+              name: 'Начало',
+              year: 2010,
+              url: 'https://www.kinopoisk.ru/film/447301/'
+            },
+            {
+              name: 'Бойцовский клуб',
+              year: 1999,
+              url: 'https://www.kinopoisk.ru/film/361/'
+            }
+          ]
+
+        ul.nav__list
+          each film in filmList
+            a(href= film.url target="_blank" class="nav__item")
+              li= film.name + ', ' + film.year + ' г.'
     footer.footer
       .container
         |&copy; 2020 Sergey Chivirda

@@ -73,6 +73,28 @@ body {
   }
 }
 
+.nav__heading {
+  margin-bottom: 20px;
+}
+
+.nav__list {
+  list-style: none;
+
+  @media (min-width:750px) and (max-width:1200px) {
+    margin-bottom: 10em;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.nav__item {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .footer {
   display: flex;
   align-items: center;
