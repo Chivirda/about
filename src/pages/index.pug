@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+  head
+    title About Sergey Chivirda
+    link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="styles/style.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous")
+    script
+      include ../schema/schema.json
+  body
+    header.header.container
+      h1 Сергей Чивирда
+    .wrapper.container
+      .photo
+        figure
+          img(src="images/photo.jpg", alt="Моё фото" class="photo__img")
+          figcaption Моё свежее фото
+      article.main
+        p.main__text Меня зовут 
+          strong Сергей Чивирда. 
+          | В 2016 году я закончил Северный (Арктический) федеральный университет имени М.В. Ломоносова.
+        p.main__text Своё знакомство с вебом начал с курса школы 
+          a(href="https://highlights.guru/" class="main__link" target="_blank") Highlights
+          |. К сожалению, диплом о прохождении курса по web - дизайну я не получил. Так как не сдал выпускную работу. 
+        p.main__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vitae, ullam labore architecto rerum nihil error at natus minima ipsam voluptatibus ut nesciunt quasi ea corrupti eveniet eos facilis autem iste enim assumenda fugiat odio! Repellat, nesciunt illum iusto minus facilis quaerat earum assumenda necessitatibus voluptates nobis deleniti molestiae. Aspernatur, totam. Nemo laborum tempore debitis labore iusto voluptatum molestiae maiores consequuntur voluptatem nesciunt cupiditate placeat nostrum necessitatibus nobis inventore soluta error tempora id, corrupti natus vel corporis officiis ex dignissimos. Non, rerum quisquam! Mollitia sit numquam dicta deleniti esse. Architecto eum dolorem asperiores, neque exercitationem omnis vel velit perspiciatis in.
+      nav
+    footer.footer
+      .container
+        |&copy; 2020 Sergey Chivirda
+      .social
+        a(href="https://github.com/Chivirda" target="_blank" class="social-link")
+          i(class="fab fa-github")
+        a(href="https://www.instagram.com/chivirda/" target="_blank" class="social-link")
+          i(class="fab fa-instagram")
+        a(href="https://vk.com/sichivirda" target="_blank" class="social-link")
+          i(class="fab fa-vk")

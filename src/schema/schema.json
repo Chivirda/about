@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Сергей Чивирда",
+  "url": "https://chivirda.github.io/about/",
+  "image": "https://chivirda.github.io/about/images/photo.jpg",
+  "sameAs": [
+    "https://www.instagram.com/chivirda/",
+    "https://github.com/Chivirda"
+  ],
+  "jobTitle": "Программист"  
+}
